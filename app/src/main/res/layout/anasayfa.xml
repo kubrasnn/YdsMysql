@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="500dp"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="83dp">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/yds"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:id="@+id/lnr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvdene"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvdene"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/img"
+            android:gravity="center"
+            android:text="Yükleniyor..."
+            android:textColor="@color/green"
+            android:textSize="8pt"
+            android:textStyle="bold" />
+
+        <Button
+
+            android:id="@+id/btnOnlineSinav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/lnr"
+            android:layout_marginEnd="92dp"
+            android:layout_marginRight="92dp"
+            android:layout_marginTop="34dp"
+            android:background="@null"
+            android:fontFamily="casual"
+            android:foreground="@drawable/clockicon"
+            android:foregroundGravity="left|center_vertical|center_horizontal"
+            android:gravity="center"
+            android:text="    Online Sınav"
+            android:textAllCaps="false"
+            android:textColor="@color/uyeButtonColor"
+            android:textSize="13pt"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnKendiniDene"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnOnlineSinav"
+            android:layout_alignStart="@+id/btnOnlineSinav"
+            android:layout_below="@+id/btnOnlineSinav"
+            android:layout_marginTop="13dp"
+            android:background="@null"
+            android:fontFamily="casual"
+            android:foreground="@drawable/todoicon"
+            android:foregroundGravity="left|center_vertical|center_horizontal"
+            android:text="    Kendini Dene"
+            android:textAllCaps="false"
+            android:textColor="@color/uyeButtonColor"
+            android:textSize="13pt"
+            android:textStyle="bold" />
+
+        <Button
+
+            android:id="@+id/btnistatistik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/btnOnlineSinav"
+            android:layout_alignLeft="@+id/btnKendiniDene"
+            android:layout_alignRight="@+id/btnOnlineSinav"
+            android:layout_alignStart="@+id/btnKendiniDene"
+            android:layout_below="@+id/btnKendiniDene"
+            android:layout_marginTop="18dp"
+            android:background="@null"
+            android:fontFamily="casual"
+            android:foreground="@drawable/statistics"
+            android:foregroundGravity="left|center_vertical|center_horizontal"
+            android:text="   Sonuçlarım"
+            android:textAllCaps="false"
+            android:textColor="@color/uyeButtonColor"
+            android:textSize="13pt"
+            android:textStyle="bold"
+           />
+
+        <Button
+
+            android:id="@+id/btncikis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@null"
+            android:elevation="1dp"
+            android:fontFamily="casual"
+            android:text="Çıkış"
+            android:textAllCaps="false"
+            android:textColor="@color/uyeButtonColor"
+            android:textSize="13pt"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
+
+
+
